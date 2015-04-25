@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor_name: MyString
+  doctor_url: MyString
+  doctor_password: MyString
+  doctor_gender: MyString
+  doctor_birthday: MyString
+  doctor_job: MyString
+  doctor_department: MyString
+  doctor_telephone: MyString
+
+two:
+  doctor_name: MyString
+  doctor_url: MyString
+  doctor_password: MyString
+  doctor_gender: MyString
+  doctor_birthday: MyString
+  doctor_job: MyString
+  doctor_department: MyString
+  doctor_telephone: MyString

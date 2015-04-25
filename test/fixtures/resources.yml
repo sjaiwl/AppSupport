@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  suffer_id: 1
+  resource_type: 1
+  resource_url: MyString
+  resource_size: MyString
+  resource_category: MyString
+
+two:
+  user_id: 1
+  suffer_id: 1
+  resource_type: 1
+  resource_url: MyString
+  resource_size: MyString
+  resource_category: MyString

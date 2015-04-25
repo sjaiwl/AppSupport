@@ -1,0 +1,65 @@
+<%= form_for(@patient) do |f| %>
+  <% if @patient.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+      <% @patient.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :patient_hospitalNumber %><br>
+    <%= f.number_field :patient_hospitalNumber %>
+  </div>
+    <div class="field">
+      <%= f.label :user_id %><br>
+      <%= f.number_field :user_id %>
+    </div>
+  <div class="field">
+    <%= f.label :patient_name %><br>
+    <%= f.text_field :patient_name %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_gender %><br>
+    <%= f.text_field :patient_gender %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_age %><br>
+    <%= f.number_field :patient_age %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_height %><br>
+    <%= f.number_field :patient_height %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_weight %><br>
+    <%= f.number_field :patient_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_telephone %><br>
+    <%= f.text_field :patient_telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_idNumber %><br>
+    <%= f.text_field :patient_idNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_residence %><br>
+    <%= f.text_field :patient_residence %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_situation %><br>
+    <%= f.text_field :patient_situation %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_url %><br>
+    <%= f.text_field :patient_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
