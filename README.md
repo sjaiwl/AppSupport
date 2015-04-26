@@ -86,3 +86,9 @@ end
   ```
   
 ## 怎么实现图片，视频，音频的上传
+* 使用carrierwave上传插件
+  * Gemfile中配置
+  ```
+    # 上传图片插件
+    gem 'carrierwave'
+  ```
