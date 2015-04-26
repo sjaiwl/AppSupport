@@ -95,3 +95,5 @@ end
   * 具体的操作方法可以查看下面的博客
 
     [点击查看](http://blog.csdn.net/yfeng1226/article/details/7264411)
+    
+  * 上传的图片，视频以及音频都必须要是file文件，不然无法上传成功
