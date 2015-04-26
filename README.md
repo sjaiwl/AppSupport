@@ -11,7 +11,7 @@
 * 本项目中使用的是mysql数据库，如果不指定会默认使用sqlite数据库
 ```
 default: &default
-  adapter: mysql2
+  adapter: mysql2 #指定mysql数据库
   encoding: utf8
   pool: 5
   username: root
@@ -20,7 +20,9 @@ default: &default
 
 development:
   <<: *default
-  database: AppSupport_development
+  database: AppSupport_development #自己的数据库名
 ```
+* 关与脚手架功能以及命令的代码，可以看看ruby on rails教程
+  * [点击查看](https://github.com/sjaiwl/image_folder/blob/master/Ruby%20on%20Rails%204%20Tutorial%20中文版.pdf)
 
 
