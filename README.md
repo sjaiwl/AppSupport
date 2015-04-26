@@ -93,4 +93,5 @@ end
     gem 'carrierwave'
   ```
   * 具体的操作方法可以查看下面的博客
+
   [点击查看](http://blog.csdn.net/yfeng1226/article/details/7264411)
