@@ -25,4 +25,16 @@ development:
 * 关与脚手架功能以及命令的代码，可以看看ruby on rails教程
   * [点击查看](https://github.com/sjaiwl/image_folder/blob/master/Ruby%20on%20Rails%204%20Tutorial%20中文版.pdf)
 
+## 怎么实现具体的登陆，注册等功能(在controller中实现以下功能)
+* 用户名和密码登陆
+```
+def login
+    @user = User.find_by(doctor_name: params[:doctor_name], doctor_password: params[:doctor_password])
+    if @user == nil
+      json_str = "{'response':未找到用户}"
+      render json: json_str
+    end
+  end
+```
+
 
