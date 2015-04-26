@@ -84,4 +84,5 @@ end
   match '/new_resource', to: 'resources#new_resource', via: [:post]
   match '/delete_resource', to: 'resources#delete_resource', via: [:post]
   ```
+  
 ## 怎么实现图片，视频，音频的上传
