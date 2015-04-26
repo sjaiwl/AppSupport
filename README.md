@@ -55,4 +55,16 @@ def login
     end
   end
 ```
-
+* 更新用户信息
+```
+def update_user
+  @user = User.find(params[:doctor_id])
+  if @user.update(user_params)
+    json_str = "{'success':1}"
+    render json: json_str
+  else
+    json_str = "{'success':0}"
+    render json: json_str
+  end
+end
+```
