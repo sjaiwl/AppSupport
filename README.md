@@ -97,3 +97,8 @@ end
     [点击查看](http://blog.csdn.net/yfeng1226/article/details/7264411)
     
   * 上传的图片，视频以及音频都必须要是file文件，不然无法上传成功
+
+## 参考资料:
+* [Ruby on Rails 指南](http://guides.ruby-china.org)
+* [Ruby on Rails 快速开发 Web 应用程序](http://www.ibm.com/developerworks/cn/linux/l-rubyrails/)
+* [Ruby on Rails 教程](http://railstutorial-china.org)
