@@ -36,5 +36,23 @@ def login
     end
   end
 ```
-
+* 注册
+```
+  def register
+    @user1 = User.find_by(doctor_name: params[:doctor_name])
+    if @user1 !=nil
+      json_str = "{'success':-1}"
+      render json: json_str
+    else
+      @user = User.new(doctor_name: params[:doctor_name], doctor_gender: params[:doctor_gender], doctor_password: params[:doctor_password])
+      if @user.save
+        json_str = "{'success':1}"
+        render json: json_str
+      else
+        json_str = "{'success':0}"
+        render json: json_str
+      end
+    end
+  end
+```
 
