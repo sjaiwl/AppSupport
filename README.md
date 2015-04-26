@@ -68,3 +68,19 @@ def update_user
   end
 end
 ```
+* 为指定url添加路由，这一店很重要，不然手机端无法访问到服务器。
+  * 这里是我的routes.rb中的内容
+  ```
+  match '/login', to: 'users#login', via: [:post]
+  match '/register', to: 'users#register', via: [:post]
+  match '/update_user', to: 'users#update_user', via: [:post]
+  match '/setting_password', to: 'users#setting_password', via: [:post]
+  match '/query_user', to: 'users#query_user', via: [:post]
+  match '/get_allPatient', to: 'patients#get_allPatient', via: [:get]
+  match '/get_searchPatient', to: 'patients#get_searchPatient', via: [:get]
+  match '/get_allResource', to: 'resources#get_allResource', via: [:get]
+  match '/get_patientResource', to: 'resources#get_patientResource', via: [:get]
+  match '/update_userPictureUrl', to: 'users#update_userPictureUrl', via: [:post]
+  match '/new_resource', to: 'resources#new_resource', via: [:post]
+  match '/delete_resource', to: 'resources#delete_resource', via: [:post]
+  ```
