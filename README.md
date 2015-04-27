@@ -56,7 +56,7 @@ def login
   end
 ```
 * 更新用户信息
-```
+``` ruby
 def update_user
   @user = User.find(params[:doctor_id])
   if @user.update(user_params)
@@ -88,7 +88,7 @@ end
 ## 怎么实现图片，视频，音频的上传
 * 使用carrierwave上传插件
   * Gemfile中配置
-  ```
+  ``` ruby
     # 上传图片插件
     gem 'carrierwave'
   ```
