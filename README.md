@@ -9,7 +9,7 @@
 
 ## 使用脚手架功能定义数据库表以及指定数据库
 * 本项目中使用的是mysql数据库，如果不指定会默认使用sqlite数据库
-```
+``` ruby
 default: &default
   adapter: mysql2 #指定mysql数据库
   encoding: utf8
@@ -27,7 +27,7 @@ development:
 
 ## 怎么实现具体的登陆，注册等功能(在controller中实现以下功能)
 * 用户名和密码登陆
-```
+``` ruby
 def login
     @user = User.find_by(doctor_name: params[:doctor_name], doctor_password: params[:doctor_password])
     if @user == nil
@@ -37,7 +37,7 @@ def login
   end
 ```
 * 注册
-```
+``` ruby
   def register
     @user1 = User.find_by(doctor_name: params[:doctor_name])
     if @user1 !=nil
@@ -70,7 +70,7 @@ end
 ```
 * 为指定url添加路由，这一店很重要，不然手机端无法访问到服务器。
   * 这里是我的routes.rb中的内容
-  ```
+  ``` ruby
   match '/login', to: 'users#login', via: [:post]
   match '/register', to: 'users#register', via: [:post]
   match '/update_user', to: 'users#update_user', via: [:post]
