@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150419050628) do
+ActiveRecord::Schema.define(version: 20150428083900) do
 
   create_table "patients", force: :cascade do |t|
     t.integer  "patient_hospitalNumber", limit: 4
@@ -31,15 +31,16 @@ ActiveRecord::Schema.define(version: 20150419050628) do
   end
 
   create_table "resources", force: :cascade do |t|
-    t.integer  "user_id",              limit: 4
-    t.integer  "suffer_id",            limit: 4
-    t.integer  "resource_type",        limit: 4
-    t.string   "resource_url",         limit: 255
-    t.string   "resource_size",        limit: 255
-    t.string   "resource_category",    limit: 255
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.string   "resource_description", limit: 255
+    t.integer  "user_id",               limit: 4
+    t.integer  "suffer_id",             limit: 4
+    t.integer  "resource_type",         limit: 4
+    t.string   "resource_url",          limit: 255
+    t.string   "resource_size",         limit: 255
+    t.string   "resource_category",     limit: 255
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+    t.string   "resource_description",  limit: 255
+    t.string   "resource_thumbnailUrl", limit: 255
   end
 
   create_table "users", force: :cascade do |t|
