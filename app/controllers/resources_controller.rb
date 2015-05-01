@@ -85,10 +85,8 @@ class ResourcesController < ApplicationController
     index = params[:index]
     if index == '0'
       @resources = Resource.where('user_id = ? AND suffer_id=?',params[:doctor_id],params[:suffer_id]).limit(5).order(updated_at: :desc)
-      render json: @resources.as_json
     else
       @resources = Resource.where('user_id = ? AND suffer_id=?AND id<?',params[:doctor_id],params[:suffer_id],index).limit(5).order(updated_at: :desc)
-      render json: @resources.as_json
     end
   end
 
