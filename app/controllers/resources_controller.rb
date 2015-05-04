@@ -94,12 +94,6 @@ class ResourcesController < ApplicationController
     @resource = Resource.new(user_id: params[:doctor_id], suffer_id: params[:suffer_id], resource_type: params[:resource_type],
                              resource_size: params[:resource_size], resource_category: params[:resource_category], resource_description: params[:resource_description])
     @resource.update_attributes(:resource_url => params[:resource_url],:resource_thumbnailUrl => params[:resource_thumbnailUrl])
-    if @resource.save
-      json_str = "{'success':1}"
-      render json: json_str
-    else
-      render json: @resource.errors
-    end
   end
 
   private
